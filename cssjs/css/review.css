@@ -1,0 +1,280 @@
+.container {
+    margin: auto;
+    width: 80%;
+    background-color: azure;
+
+}
+
+.container p,
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 110%;
+}
+
+#logo {
+    width: 200px;
+    height: 100px;
+}
+
+#cart-logo {
+    width: 70px;
+    height: 60px;
+    padding-right: 2px;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 1fr;
+    grid-template-rows: repeat(2, miniax(100px, auto));
+    grid-gap: 10px;
+}
+
+.header {
+    width: 100%;
+}
+
+.head .item-2 {
+    margin-top: 40px;
+
+}
+
+.head .item-3 {
+    margin-top: 60px;
+    font-size: 120%;
+
+}
+
+.head .item-4 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    height: 70px;
+    width: 100%;
+    background-color: #000;
+
+}
+
+.head .item-4 li {
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 0.8%;
+    margin-right: 2px;
+
+}
+
+#toggle-button {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    display: none;
+
+}
+
+nav a {
+
+    color: #fff;
+    font-style: italic;
+    font-size: 125%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: deeppink;
+}
+
+
+.customer-review {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+
+.review h1,
+p {
+    width: 100%;
+}
+
+.heading {
+    font-size: 25px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.customer-1,
+.customer-3 {
+    grid-column: 2/3;
+}
+
+.customer-review img {
+    width: 30%;
+    display: block;
+}
+
+.customer-review .star {
+    font-size: 200%;
+}
+
+.customer-review span {
+    font-weight: bold;
+}
+
+.customer-review .star span {
+    color:#000;
+}
+
+.audio {
+    grid-column: 3/4;
+    max-width: 600px;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: (2, auto);
+    background-color: #efefef;
+    height: 100px;
+}
+
+.copy {
+    width: 100%;
+    height: 50px;
+    grid-row: 1/3;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.frq {
+    height: 5px;
+    grid-row: 1/2;
+    text-align: right;
+    padding-right: 10px;
+
+
+}
+
+.top {
+    height: 45px;
+    grid-row: 2/3;
+    text-align: right;
+    padding-right: 10px;
+}
+@media (max-width:1300px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width:671px) and (max-width:1000px) {
+    .customer-review {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: (3, auto);
+    }
+
+    .customer-1 {
+        grid-column: 1/2;
+    }
+
+    .customer-2 {
+        grid-column: 2/3;
+    }
+
+    .customer-3 {
+        grid-column: 1/2;
+    }
+
+    .audio {
+        grid-column: 2/3;
+    }
+
+    .heading {
+        grid-column: 1/3;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:670px) {
+    .customer-review {
+        grid-template-columns: 1fr;
+        grid-template-rows: (7, auto);
+    }
+
+    .customer-1,
+    .customer-2,
+    .customer-3,
+    .customer-4,
+    .audio {
+        grid-column: 1/2;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width:555px) {
+    #logo {
+        display: none;
+    }
+
+    .head {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: (3, auto);
+    }
+
+    #toggle-button {
+        display: block;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .head .item-2 {
+        grid-row: 3/4;
+        margin-top: 5px;
+
+
+    }
+
+    .head .item-3 {
+        margin-top: 0;
+        font-size: 120%;
+        grid-row: 1/2;
+
+    }
+
+    .head .item-4 {
+        display: none;
+        width: 100%;
+        height: 200px;
+        grid-row: 2/3;
+    }
+
+    .head .item-4.active {
+        display: block;
+    }
+
+    .head .item-4 li {
+        margin-left: 0;
+        display: block;
+        padding-top: 10px;
+        /* text-align: center; */
+
+    }
+
+    nav a {
+        font-style: normal;
+    }
+}
+@media (max-width:300px){
+    .copy{
+        padding: 0;
+    }
+}
