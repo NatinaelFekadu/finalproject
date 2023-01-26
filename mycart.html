@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCart page</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="row">
+                <div class="col-sm-2 ">
+                    <img class="home-logo img-fluid d-none d-sm-block" id="logo" src="src/images/logo.png" alt="The home page logo">
+                </div>
+                <div class="col-md-3 offset-md-1 mt-sm-4 fs-2 order-2 order-sm-1">
+                    <h1 class="text-dark text-decoration-none">My Cart</h1>
+                </div>
+                <nav class="navbar navbar-expand-sm my-3 bg-dark col-12 order-1 order-sm-2">
+                    <a href="" class="navbar-brand"></a>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="btn">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="About.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="Review.html">Review</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <table class="products-container w-75 table table-responsive">
+                    <tr>
+                        <th class=".products-container__table-header p-2" scope="col">Items</th>
+                        <th class="products-container__table-header p-2" scope="col">Quantity</th>
+                        <th class="products-container__table-header p-2" scope="col">Total Price</th>
+                    </tr>
+                </table>
+                <div class="row">
+                    <p class="total-price col-3 offset-6" id="sub-total">sub total:</p>
+                    <a href="Order.html"><button class="button col-md-2 col-3 offset-6" id="order-button">Place Order</button></a>
+                </div>
+            </section>
+        </main>
+        <hr>
+        <footer class="bg-dark h-100">
+            <div class="row">
+                <p class="col-sm-4 mt-4 offset-sm-5 text-white">&copy;copyright Natinael Fekadu 2022</p>
+                <p class="col-sm-3 mt-3 text-sm-end"><a class="link link--secondary text-white text-decoration-none"
+                        href="FAQ.html">FAQ</a></p>
+                <p class="col-sm-2 mb-2 offset-sm-10 text-sm-end"><a
+                        class="link top link--secondary text-white text-decoration-none" href="#">Top</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="eccomerce.js"></script>
+    <script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

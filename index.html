@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+</head>
+<body>
+<div class="container bg-light">
+    <header class="head">
+        <div class="row">
+            <div class="col-sm-2 order-2 order-sm-1">
+                <img class="home-logo img-fluid d-none d-sm-block" id="logo" src="src/images/logo.png" alt="The home page logo">
+            </div>
+            <div class="col-md-5 mt-sm-4 mt-2 offset-md-3 order-2 order-sm-1">
+                <label for="filter" hidden>filter</label>
+                <input class="form-control mt-3" type="text" id="filter" placeholder="product name...">
+            </div>
+            <div class="col-md-2 mt-sm-4 mt-2 order-2 order-sm-1">
+                <a class="text-dark text-decoration-none" href="mycart.html"><img style="width: 70px; height: 60px;" src="src/images/index2.png"
+                        alt="a logo for shopping cart">MyCart</a>
+            </div>
+            <nav class="navbar navbar-expand-sm my-3 bg-dark col-12 order-1 order-sm-2">
+                <a href="" class="navbar-brand text-white"></a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+                    <i class="bx bx-menu text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="btn">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-white active" aria-href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link:hover-primary" href="About.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="Review.html">Review</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="row">
+            <h1 class="col mt-3 fw-bold" >Electronics<br>Ecommerse <span class="text-success">Website</span></h1>
+            <img class="col w-50 h-50 m-3" id="main-img" src="src/images/index.jpg" alt="an image that shows what an ecommerce website does">
+        </section>
+        <h1>Products</h1>
+        <section class="mb-5">
+            <div class="row mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/phone1.jpg" alt="a phone image to be purchased">
+                <p class="detail"><span class="detail__name">Lava Z3 smartphone</span><br>smartphone with 5000 mAh
+                    battery launched at<br> <span class="detail__price">$ 91</span></p>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/laptop1.jpg"
+                    alt="Apple MacBook Pro laptop image to be purchased">
+                <p class="detail"><span class="detail__name">Apple MacBook Pro laptop</span><br>MacOS delivering
+                    excellent battery life
+                    at price<br> <span class="detail__price">$ 2,499</span>.
+                </p>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/watch1.jpg"
+                    alt="Boat Wave Pro 47 smartwatch image to be purchased">
+                <p class="detail"><span class="detail__name">Boat Wave Pro 47 smartwatch</span><br>HD display and health
+                    trackers launched
+                    with a price of<br> <span class="detail__price">$ 39</span>.
+                </p>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/watch2.jpg"
+                    alt="Ambrane FitShot Curl smartwatch image to be purchased">
+                <p class="detail"><span class="detail__name">Ambrane FitShot smartwatch</span><br>FitShot Edge
+                    smartwatches launched in India priced at <br><span class="detail__price">$ 28</span>.</p>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product" >
+                <img class="w-100"src="src/images/laptop2.jpg" alt="Asus unveils laptop image to be purchased">
+                <p class="detail"><span class="detail__name">Asus unveils laptop</span><br>New ROG and TUF-series gaming
+                    laptops in India at<br><span class="detail__price">$ 1331</span>.</p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/earbud1.jpg" alt="an earbud image to be purchased">
+                <p class="detail"><span class="detail__name">Lava Probuds 21 earbud</span><br> wireless earbuds launched
+                    in India with a price tag of <br><span class="detail__price">$ 19</span>.</p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/watch3.jpg"
+                    alt="Fire-Boltt Thunder smartwatch image to be purchased">
+                <p class="detail"><span class="detail__name">Fire-Boltt Thunder smartwatch</span> <br>with calling,
+                    local storage, AMOLED display launched at <br><span class="detail__price">$ 61</span>.</p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/laptop3.jpg"
+                    alt="Microsoft Surface Pro 8 laptop image to be purchased">
+                <p class="detail"><span class="detail__name">Microsoft Surface Pro 8 laptop</span><br> 11th-gen Intel
+                    Core processors at a price of<br><span class="detail__price">$ 980</span>.</p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            </div>
+        </section>
+        <h1>New Arrivals</h1>
+        <section class="new-arrivals">
+            <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/phone2.jpg" alt="a phone image to be purchased">
+                <p class="detail"><span class="detail__name">Xiaomis premium smartphone</span><br> Flagship phones get
+                    global rollout at price of <br><span class="detail__price">$ 999</span>.</p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/laptop4.jpg" alt="Acer Chromebook laptop image to be purchased">
+                <p class="detail"><span class="detail__name">Acer Chromebook laptop</span><br> 12th Gen Intel® Core™ i7
+                    processor1 at price <br><span class="detail__price">$ 729</span>.
+                </p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/laptop5.jpg" alt="Dell G15 Gaming laptop image to be purchased">
+                <p class="detail"><span class="detail__name">Dell G15 Gaming Laptop</span><br> windows eleven operating
+                    system at a price of <br><span class="detail__price">$ 699</span>.</p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-9 mt-5 product">
+                <img class="w-100" src="src/images/laptop6.jpg" alt="Lenovo Yoga 9i laptop image to be purchased">
+                <p class="detail"><span class="detail__name">Lenovo Yoga 9i Gen 7 laptop</span><br>12th-gen Intel
+                    processors with high performance at a price of <br><span class="detail__price">$ 1,530</span>.</p>
+                <button class="btn btn btn-outline-dark">ADD TO CART</button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer class="bg-dark h-100">
+        <div class="row">
+            <p class="col-sm-4 mt-4 offset-sm-5 text-white">&copy;copyright Natinael Fekadu 2022</p>
+            <p class="col-sm-3 mt-3 text-sm-end"><a class="link link--secondary text-white text-decoration-none" href="FAQ.html">FAQ</a></p>
+            <p class="col-sm-2 mb-2 offset-sm-10 text-sm-end"><a class="link top link--secondary text-white text-decoration-none" href="#">Top</a></p>
+        </div>
+    </footer>
+</div>
+<script src="eccomerce.js"></script>
+   <script src="Bootstrap/js/bootstrap.js"></script> 
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="row">
+                <div class="col-sm-2 order-2 order-sm-1">
+                    <img class="home-logo img-fluid d-none d-sm-block" id="logo" src="src/images/logo.png" alt="The home page logo">
+                </div>
+                <div class="col-md-4 offset-md-1 my-4 order-3 order-sm-1">
+                    <h1 class="fs-2">Customer Review</h1>
+                </div>
+                <div class="col-md-2 offset-md-3 mt-sm-5 order-2 order-sm-1">
+                    <a class="link text-dark text-decoration-none" href="mycart.html"><img src="src/images/index2.png"
+                            alt="a logo for shopping cart" style="width: 70px; height: 60px;">MyCart</a>
+            </div>
+                <nav class="navbar navbar-expand-sm my-3 bg-dark col-12 order-1 order-sm-2">
+                    <a href="" class="navbar-brand"></a>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="btn">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="About.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link text-white active" aria-href="Review.html">Review</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="row">
+                <div class="col-md-4">
+                    <h1 class="page-description">Some of our customers feedback</h1>
+                </div>
+                <div class="col-md-4">
+                    <img class="default-img" src="src/images/person.png" alt="default profile picture for customer" style="width: 30%;">
+                    <p class="content"><span class="content__name fw-bold">Name</span><br>
+                        Your products are very good and modern as well,i wish you could add
+                        different categories so that one can easily find what he/she is
+                        looking for.
+                    </p>
+                    <h1 class="review__star"><span class="review__star-num">&starf; &starf; &starf;</span> &star; &star;
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <img class="default-img" src="src/images/person.png" alt="default profile picture for customer" style="width: 30%;">
+                    <p class="content"><span class="content__name fw-bold">Name</span><br>
+                        I have found different new technologies that i didn't even know
+                        such devices exist.Please keep adding new products in to your website.
+                    </p>
+                    <h1 class="review__star"><span class="review__star-num">&starf; &starf; &starf; &starf;</span>
+                        &star;</h1>
+                </div>
+                <div class="col-md-4 mt-3 offset-md-4">
+                    <img class="default-img" src="src/images/person.png" alt="default profile picture for customer" style="width: 30%;">
+                    <p class="content"><span class="content__name fw-bold">Name</span><br>
+                        The most easiy and awesome ecommerce website i have came across,your
+                        products have high quality and reasonable price.Please expand your
+                        products for other categories to.
+                    </p>
+                    <h1 class="review__star"><span class="review__star-num">&starf; &starf; &starf; &starf;
+                            &starf;</span></h1>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <img class="default-img" src="src/images/person.png" alt="default profile picture for customer" style="width: 30%;">
+                    <p class="content"><span class="content__name fw-bold">Name</span><br>
+                        You have a nice website,but there are several issues
+                        you need to address, such as the customer has to
+                        be able to filter the products by their price so as to get the desired
+                        product easily.
+                    </p>
+                    <h1 class="review__star"><span class="review__star-num">&starf; &starf;</span> &star; &star; &star;
+                    </h1>
+                </div>
+                <div class="col-md-4 offset-md-8 embed-responsive embed-responsive-4by3">
+                    <p>
+                        <a rel="transcript" class="link text-dark text-decoration-none" for="theAudio" title="English tanscript"
+                            href="#theText">Transcirpt below</a>
+                    </p>
+                    <audio class="audio w-100 w-sm-75 " id="theAudio" controls>
+                        <source src="src/audios/thank you.mp3">
+                    </audio>
+                    <transcript id="theText">
+                        <p>Thank you for making our website your choise.
+                            we will always try to provide what is best for you.</p>
+                    </transcript>
+                </div>
+            </section>
+        </main>
+        <hr>
+        <footer class="bg-dark h-100">
+            <div class="row">
+                <p class="col-sm-4 mt-4 offset-sm-5 text-white">&copy;copyright Natinael Fekadu 2022</p>
+                <p class="col-sm-3 mt-3 text-sm-end"><a class="link link--secondary text-white text-decoration-none"
+                        href="FAQ.html">FAQ</a></p>
+                <p class="col-sm-2 mb-2 offset-sm-10 text-sm-end"><a
+                        class="link top link--secondary text-white text-decoration-none" href="#">Top</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="eccomerce.js"></script>
+    <script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

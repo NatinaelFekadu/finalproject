@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img class="home-logo img-fluid d-none d-sm-block" id="logo" src="src/images/logo.png" alt="The home page logo">
+                </div>
+                <div class="col-md-2 fs-1 offset-md-1 mt-4 order-3 order-sm-1">
+                    <h1>Order</h1>
+                </div>
+                <div class="col-md-2 offset-md-5 mt-sm-5 order-2 order-sm-1">
+                    <a class="link text-dark text-decoration-none" href="mycart.html"><img src="src/images/index2.png"
+                            alt="a logo for shopping cart" style="width: 70px; height: 60px;">MyCart</a>
+                </div>
+                <nav class="navbar navbar-expand-sm my-3 bg-dark col-12 order-1 order-sm-2">
+                    <a href="" class="navbar-brand"></a>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="btn">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="About.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="Review.html">Review</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="row">
+                <h1 class="col-md mt-5">Finish your order by filling the following form</h1>
+                <div class="col-md">
+                    <p>
+                        <a rel="transcript" class="link text-dark text-decoration-none" for="the-video" title="English tanscript"
+                            href="#the-text">Transcirpt below</a>
+                    </p>
+                    <video controls="controls" id="the-video" width="100%">
+                        <source src="src/videos/Ecommerce video.mp4" type="video/mp4">
+                        <track label="English" kind="captions" src="src/caption.vtt" srclang="en-us" default>
+                    </video>
+                    <transcript id="the-text">
+                        <p>A short cartoon video making an online shopping</p>
+                    </transcript>
+                </div>
+            </section>
+            <section class="user-information">
+                <h1 class="information-header">Contact information</h1>
+                <form class="contact-information row needs-validation" action="/" method="GET" novalidate>
+                    <div class="information firstname col-md-6 my-3">
+                        <label class="form-label" for="firstname">Firstname</label>
+                        <input class="form-control" type="text" id="firstname">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                    <div class="information lastname col-md-6 my-3">
+                        <label class="form-label" for="lastname">Lastname</label>
+                        <input class="form-control" type="text" id="lastname">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                    <div class="information email col-md-6 my-3">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-control" type="email" id="email">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                    <div class="information phone col-md-6 my-3">
+                        <label class="form-label" for="phone">Phone</label>
+                        <input class="form-control" type="tel" id="phone">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                </form>
+                <h1 class="information-header my-3">Delivery</h1>
+                <form class="delivery row my-3">
+                    <div class="information col-md-6 date my-3">
+                        <label class="form-label" for="date">Delivery date</label>
+                        <input class="form-control" type="date" id="date">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                    <div class="information col-md-6 time my-3">
+                        <label class="form-label" for="time">Convinient time</label>
+                        <input class="form-control" type="time" id="time">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                    <div class="city col-md-6 my-3">
+                        <label class="form-label" for="city">City</label>
+                        <select class="form-control" id="city">
+                            <option>Addis Ababa</option>
+                            <option>Nairobi</option>
+                            <option>Hawassa</option>
+                            <option>New York</option>
+                            <option>Barcelona</option>
+                            <option>Paris</option>
+                            <option>London</option>
+                            <option>Tokyo</option>
+                            <option>Helsinki</option>
+                            <option>Berlin</option>
+                            <option>Rio</option>
+                            <option>Lisbon</option>
+                        </select>
+                    </div>
+                    <div class="information address col-md-6 my-3">
+                        <label class="form-label" for="address">Address</label>
+                        <input class="form-control" type="text" id="address">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                </form>
+                <form class="row">
+                    <h1 class="information-header my-3">Payment</h1>
+                    <div class="information card col-md-6 my-3">
+                        <label class="" for="card">Credit card number</label>
+                        <input class="form-control" type="text" id="card">
+                        <div class="information__error input-field__error text-danger"></div>
+                    </div>
+                </form>
+                <button class="button my-3" id="submit-button" type="submit">Submit</button>
+                <div class="information__confirmation"></div>
+            </section>
+        </main>
+        <hr>
+        <footer class="bg-dark h-100">
+            <div class="row">
+                <p class="col-sm-4 mt-4 offset-sm-5 text-white">&copy;copyright Natinael Fekadu 2022</p>
+                <p class="col-sm-3 mt-3 text-sm-end"><a class="link link--secondary text-white text-decoration-none"
+                        href="FAQ.html">FAQ</a></p>
+                <p class="col-sm-2 mb-2 offset-sm-10 text-sm-end"><a
+                        class="link top link--secondary text-white text-decoration-none" href="#">Top</a></p>
+            </div>
+        </footer>
+        <script src="eccomerce.js"></script>
+        <script src="Bootstrap/js/bootstrap.js"></script>
+    </div>
+</body>
+
+</html>
