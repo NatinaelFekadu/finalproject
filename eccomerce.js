@@ -157,7 +157,7 @@ function displayCart(){
     if(cartItems && productContainer){
       Object.values(cartItems).map(item=>{
           productContainer.innerHTML+=`<tr class="added"><td class='new-data w-50'>
-          <img class='product-img p-md-3 img-fluid' src=".src/images/${item.model}.jpg" alt='${item.model}' style=': 100%;
+          <img class='product-img p-md-3 img-fluid' src="src/images/${item.model}.jpg" alt='${item.model}' style=': 100%;
           height: 100%;'></td>
           <td class='new-data'>
           <label for="${item.model}" name='${item.model}' hidden>value</label>
